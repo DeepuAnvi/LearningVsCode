@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title= 'Student Details Components' icon-name="collection_variable">
+
+        <template if:true={booleanflag}>
+<lightning-input type = "text" label = "Enter First Name of Student"></lightning-input>
+<lightning-input type = "text" label = "Enter last Name of Student"></lightning-input>
+<lightning-input type =  "number" label = "Enter Marks of Students"></lightning-input>
+<lightning-button label ="Hide Details" onclick={showDetailsHandler}></lightning-button>
+
+        </template>
+
+        <template if:false={booleanflag}>
+            <lightning-button label ="Show Details" onclick={hideDetailsHandler}>
+
+            </lightning-button>
+        </template>
+
+    </lightning-card>
+    
+</template>
